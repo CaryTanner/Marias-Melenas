@@ -1,0 +1,335 @@
+:root {
+
+    --my-black: #2A2932;
+    --my-dark-blue: #6C879D;
+    --my-grey: #94A6B3;  
+    --my-brown: #95817A;
+    --my-beige: #D5C5C8;
+      
+    }
+    html{
+      scroll-behavior: smooth;
+      box-sizing: border-box;
+      font-family: 'Merriweather', serif;
+    }
+    
+    body {
+      color: var(--my-black);
+      text-align: center;
+      background-color: var(--my-grey);
+      box-sizing: border-box;
+      letter-spacing: 0.1em;
+      
+    }
+    
+    nav {
+      display: none;
+      
+    }
+    
+    .show-nav {
+      display: grid;
+      
+    }
+    
+    
+    a {
+      text-decoration: none;
+      color: var(--my-black);
+      border-bottom: 0px solid var(--my-black);
+      transition: 0.3s;
+    }
+    
+    li a:hover {
+      border-bottom: 1px solid var(--my-black);
+      
+      
+    }
+
+    .about-wrap{
+      transition: 0.3s;
+    }
+
+    .about-wrap a:hover {
+      border-bottom: 1px solid var(--my-black);
+      
+      
+    }
+    
+    ul {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 1em;
+      list-style: none;
+      margin: 1em 0;;
+      padding: 0;
+      justify-items: stretch;
+      
+    }
+    
+    li {
+      grid-column-start: 1;
+      grid-column-end: 6;
+      text-align: center;
+      background-color: var(--my-beige);
+      font-size: 40px;
+      padding: 0.5em;
+      letter-spacing: 0.3em;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+      transition: 0.3s;
+    }
+    
+    
+     
+    .burger {
+      position: relative;
+      margin: 0;
+        text-align: left;
+      z-index: 99;
+      background-color: var(--my-beige);
+      color: var(--my-black);
+      padding: 0.3em;
+      font-size: 1.5em;
+      
+        
+      }  
+      
+    
+    
+    .hero-pic {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      background-image: url("maria\ cutting\ hair.jpeg");
+      height: 80vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 10px;
+      box-sizing: border-box;
+      margin: 0;
+    }
+    
+    .landing-wrap {
+      display: grid;
+      gap: 1em;
+      padding-bottom: 1em;
+      
+    }
+    .hero-pic h1 {
+      background-color: var(--my-beige);
+      padding: 5px;
+      margin: 0 0 5px 0;
+      font-size: 2em;
+      
+    }
+    .hero-pic h2 {
+      background-color: var(--my-beige);
+      padding: 5px;
+      margin: 0;
+      font-size: 1em;
+      
+    }
+    
+    
+    
+    
+    .cta {
+      box-sizing: border-box; 
+      display: flex;
+      background-color: var(--my-dark-blue);
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;  
+    }
+    
+    .cta p {
+      font-size: 2em;
+      margin: 0.5em 0 0.1em 0;
+    }
+
+    button a {
+      padding: 20px;
+      
+    }
+    
+    .card  {
+      box-sizing: border-box;
+      margin: 1em 0;
+      display: flex;
+      background-color: var(--my-brown);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+      
+    }
+    
+    #contacts {
+      box-sizing: border-box;
+      padding: 0 20px;
+      overflow-wrap: break-word;
+    }
+    
+    #about-text {
+      box-sizing: border-box;
+      margin: 0;
+      display: flex;
+      background-color: var(--my-dark-blue);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    
+     .card h3, #about-text h2, .about-section h3 {
+      font-size: 4em;
+      margin: 0.5em 0 0 0;
+      padding: 0em 0em;
+      color: var(--my-black);
+      /*background-color: var(--my-beige);*/
+      text-align: center;
+      border-bottom: 2px solid var(--my-beige);
+    }
+    
+    p {
+      font-size: 2em;
+      padding: 0.5em 0.5em;
+    }
+    
+    button {
+      box-sizing: border-box;
+      background-color: var(--my-beige);
+      border: 1px solid var(--my-black);
+      color: var(--my-black);
+      
+      font-size: 2em;
+      padding: 10px 30px;
+      margin-bottom: 0.5em ;
+      
+      
+    }
+    
+    button:hover {
+      opacity: 0.6;
+    }
+    
+    img {
+    width: 60%;
+    margin: 1em;
+    }
+    
+    #footer {
+      display: flex;
+      background-color: var(--my-black);
+      margin: 0 -5px -5px -5px;
+      color: var(--my-dark-blue);
+      justify-content: space-between;
+    }
+    
+    #footer p {
+      font-size: 15px;
+      margin: 5px 5px;
+    }
+    
+    @media (min-width: 700px) {
+      .burger {
+        display: none;
+      }
+      
+      nav {
+        display: grid;
+      }
+      
+      li {
+        font-size: 20px;
+        grid-column: span 1;
+       
+      }
+
+    
+      .landing-wrap {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+                            
+      }
+        
+      .hero-pic {
+        grid-column: 1 / 4 ;
+        grid-row: 1 / -1;
+        min-height: 50vh;
+        
+      }
+
+      .hero-pic h1 {
+        font-size: 3em;
+      }
+      
+       .hero-pic h2 {
+        font-size: 2em;
+      }
+      .cta1 {
+        grid-column: 4 / 5 ;
+        grid-row: 1 / 2;
+      }
+      .cta2 {
+        grid-column: 4 / 5 ;
+        grid-row: 2 / 3;
+      }
+      
+      .cta p {
+        padding-top: 1em;
+        font-size: 30px;
+      }
+      
+      button {
+      font-size: 20px;
+      width: 200px;
+      height: auto;
+      }
+      
+      .card-wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      
+      .card {
+        width: 25vw; 
+      }
+      .card h3, #about-text h2, .about-section h3 {
+        font-size: 40px;
+      }
+      
+      img {
+        width: 90%;
+      }
+      
+      .about-wrap {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 5px;
+      }
+      
+      #about-text {
+        
+        margin-right: 5px;
+        max-width: 600px;
+        
+      }
+      #about-text p {
+       padding: 0 30px;
+       font-size: 15px;
+      
+      }
+       
+      #about-text img { 
+      max-width: 200px;
+      }
+      .about-wrap p {
+        font-size: 30px;
+      }
+      
+      
